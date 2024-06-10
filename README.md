@@ -19,3 +19,9 @@
 - TestCase - test a function, with a db
 - Mock the test if you dont want to perform ceratin actions (e.g. sending an email)
 - test functions has to start with test_
+
+## 4. Db
+
+- You should not run migrations before creating custom model
+- if we migrate before creating the custom model, the custom model will not be created
+- fix: `docker volume ls` and `docker volume rm <volume_name>`
