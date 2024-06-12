@@ -1,6 +1,6 @@
 #!/bin/sh
 
-set -e 
+set -e
 
-envsubst < /etc/nginx/default.conf.tpl > /etc/nginx/default.conf
-nginx -g 'daemon off;' 
+envsubst < /etc/nginx/default.conf.tpl > /etc/nginx/conf.d/default.conf
+nginx -g 'daemon off;'
